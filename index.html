@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>my form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: aqua; */
+        }
+        .form{
+            display: inline;
+            /* flex-direction: column; */
+            background-color: bisque;
+        }
+        h1{
+            display: inline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>dangol</p>
+    <form action="post" class="form">
+        <h1>From</h1>
+        <br>
+        <label for="">Name:</label>
+        <input type="text" placeholder="Name">
+        <br><br>
+        <label for="">middle name:</label>
+        <input type="text">
+        <br><br>
+        <label for="">last name:</label>
+        <input type="text">
+        <br><br>
+        <label for="">Email:</label>
+        <input type="text" required>
+        <br><br>
+        <label for="">password:</label>
+        <input type="password" required>
+        <br><br>
+        <label for="">conatct no:</label>
+        <input type="text">
+        <br><br>
+        <h1 class="h1">your qualification</h1><br>
+        <label for="" >primary level</label>
+        <input type="radio" name="qualification">
+        <br><br>
+        <label for="">secondary level</label>
+        <input type="radio" name="qualification">
+        <br><br>
+        <label for="">higher secondary level</label>
+        <input type="radio" name="qualification">
+        <br><br>
+        <h1>intrest subject</h1><br>
+        <label for="">computer science
+        </label>
+        <input type="checkbox" name="help">
+        <br><br>
+        <label for="">phy</label>
+        <input type="checkbox" name="help" id="">
+        <br><br>
+        <label for="">social</label>
+        <input type="checkbox" name="help">
+        <br><br>
+        <label for="">chemistry</label>
+        <input type="checkbox" name="help">
+        <button>submit</button>
+    </form>
 </body>
 </html>
